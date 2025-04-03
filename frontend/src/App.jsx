@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import NavBar from './composants/NavBar.jsx';
 import NavBarConn from './composants/NavBarConn.jsx';
 import Accueil from './pages/Accueil.jsx';
-import Diagnostic from './pages/Diagnostic.jsx';
+import DeD from './pages/DeD.jsx';
 
 function App() {
   return (
@@ -19,10 +19,10 @@ function Main() {
   return (
     <div>
       {location.pathname !== '/' && <NavBarConn />}
-      {location.pathname !== '/diagnostic' && <NavBar />}
+      {location.pathname !== '/ded' && <NavBar />}
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/diagnostic" element={<Diagnostic />} />
+        <Route path="/ded" element={<DeD />} />
       </Routes>
     </div>
   );
