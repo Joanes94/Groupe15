@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ButtonDiagnostic from '../composants/ButtonDiagnostic';
 import ButtonDossiers from '../composants/ButtonDossiers';
 import FormulaireDiagnostic from '../composants/FormulaireDiagnostic';
+import Dossiers from '../composants/Dossiers';
 
 function DeD() {
   // État pour suivre le bouton actif
@@ -12,7 +13,7 @@ function DeD() {
   };
 
   return (
-    <div className=' pt-5 md:pt-8 lg:pt-10 xl:pt-16'>
+    <div className=' pt-5 md:pt-8 lg:pt-10 xl:pt-12'>
         <div className='justify-between flex  px-2 md:px-28 lg:px-56 xl:px-80'>
             <ButtonDiagnostic 
                 isActive={activeButton === 'diagnostic'} 
@@ -30,6 +31,12 @@ function DeD() {
         <div className='mt-4'>
           {/* Contenu à afficher lorsque ButtonDiagnostic est actif */}
           <FormulaireDiagnostic/>
+        </div>
+      )}
+      {activeButton === 'dossiers' && (
+        <div className='mt-4'>
+          {/* Contenu à afficher lorsque ButtonDiagnostic est actif */}
+          <Dossiers/>
         </div>
       )}
     </div>
