@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRulerCombined, FaThermometerHalf, FaStethoscope , FaFileAlt, FaPen } from 'react-icons/fa';
+import { FaFileAlt, FaPen } from 'react-icons/fa';
 
 function Accueil() {
   return (
