@@ -12,8 +12,8 @@ function Dossiers() {
             <ButtonRecherche/>
         </div>
         <div className='justify-center flex flex-xrap gap-8 mt-8 lg:mt-12 xl:mt-16'>
-            <div className='border-2 rounded-lg border-[#269C26] p-4  '>
-                <div className='space-y-2 '>
+            <div className='border-2 rounded-lg border-[#269C26] p-4  bg-[#fdfffd]'>
+                <div className='space-y-2 roboto'>
                     <h1> <strong>Nom:</strong> </h1>
                     <h1> <strong>Prénoms:</strong> </h1>
                     <h1> <strong>Age:</strong> </h1>
