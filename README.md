@@ -1,7 +1,7 @@
 1. Installation et Configuration
     *Prérequis : Node.js, Python, Django
     *Instructions d'installation :
-      -Cloner le repo :git clone <url-du-repo>
+      -Cloner le repo :git clone <https://github.com/Joanes94/Groupe15.git>
       -Frontend:cd frontend
                 npm install
                 npm start
