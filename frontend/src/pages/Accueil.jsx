@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFileAlt, FaPen } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Accueil() {
   return (
@@ -8,8 +9,8 @@ function Accueil() {
             <h1 className='text-[#3aa33a] text-2xl lg:text-3xl xl:text-4xl w-[300px] lg:w-[500px] roboto'>Posez  rapidement et en toute sécurité un diagnostic de la maladie chronique rénale</h1>
             <h1 className='pt-5 pb-10 w-80  text-gray-700'>Bienvenue sur KDiagnostics, notre solution pour diagnostiquer le stade de la maladie chronique rénale. Inscrivez vous si vous n'avez pas encore de compte ou connectez vous si vous en avez déjà un afin de bénéficier de nos services.</h1>
             <div className='flex gap-x-5 text-white roboto ml-3 md:ml-0'>
-                <button className='bg-[#269C26] px-6 py-3 text-lg font-semibold  rounded'> <link rel="stylesheet" href="#" /> S'inscrire </button>
-                <button className='bg-[#269C26] px-6 py-3 text-lg font-semibold rounded'> <link rel="stylesheet" href="#" /> Se Connecter </button>
+                <button className='bg-[#269C26] px-6 py-3 text-lg font-semibold  rounded'> <Link to="/inscriptionm">S'inscrire</Link> </button>
+                <button className='bg-[#269C26] px-6 py-3 text-lg font-semibold rounded'> <Link to="/connexionm">Se Connecter</Link> </button>
             </div>
         </div>
         <div className='hidden md:flex'>
